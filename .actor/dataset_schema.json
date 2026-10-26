@@ -1,0 +1,51 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "vendorName": { "type": "string", "title": "Vendor / Partner Name" },
+      "category": { "type": "string", "title": "Category" },
+      "subcategory": { "type": "string", "title": "Subcategory" },
+      "maturityTier": { "type": "string", "title": "CNCF Tier / Status" },
+      "website": { "type": "string", "title": "Website" },
+      "primaryEmail": { "type": "string", "title": "Primary Verified Email" },
+      "emails": { "type": "array", "title": "Verified Emails", "items": { "type": "string" } },
+      "phones": { "type": "array", "title": "Phone Numbers", "items": { "type": "string" } },
+      "linkedinUrl": { "type": "string", "title": "LinkedIn URL" },
+      "twitterUrl": { "type": "string", "title": "X / Twitter URL" },
+      "githubUrl": { "type": "string", "title": "GitHub Repository URL" },
+      "crunchbaseUrl": { "type": "string", "title": "Crunchbase URL" },
+      "contactPageUrl": { "type": "string", "title": "Contact Page URL" },
+      "description": { "type": "string", "title": "Description" },
+      "businessUseCase": { "type": "string", "title": "Business Use Case" },
+      "targetPersonas": { "type": "string", "title": "Target Personas" },
+      "tags": { "type": "array", "title": "Technical Tags", "items": { "type": "string" } },
+      "scrapedAt": { "type": "string", "title": "Scraped At (UTC)" }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Enriched CNCF Cloud Native & AI B2B Leads",
+      "transformation": {
+        "fields": [
+          "vendorName",
+          "category",
+          "subcategory",
+          "maturityTier",
+          "website",
+          "primaryEmail",
+          "emails",
+          "phones",
+          "linkedinUrl",
+          "githubUrl",
+          "crunchbaseUrl",
+          "description"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}

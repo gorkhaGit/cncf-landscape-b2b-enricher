@@ -1,0 +1,43 @@
+{
+  "title": "CNCF Cloud Native & AI Landscape B2B Lead Enricher",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "categoryFilter": {
+      "title": "Category / Subcategory Filter",
+      "type": "string",
+      "description": "Optional filter by CNCF Category or Subcategory (e.g., Certified Kubernetes, Observability, Security, AI, Service Mesh, Database, Consulting).",
+      "editor": "textfield",
+      "default": ""
+    },
+    "maturityFilter": {
+      "title": "CNCF Status / Tier Filter",
+      "type": "string",
+      "description": "Filter vendors by CNCF project or membership status.",
+      "enum": ["all", "graduated", "incubating", "sandbox", "member", "commercial"],
+      "default": "all"
+    },
+    "searchQuery": {
+      "title": "Keyword Search Filter",
+      "type": "string",
+      "description": "Optional keyword to match across vendor name, description, tags, or domain.",
+      "editor": "textfield",
+      "default": ""
+    },
+    "maxItems": {
+      "title": "Max Vendors to Scrape & Enrich",
+      "type": "integer",
+      "description": "Maximum number of enriched Cloud Native & AI B2B leads to extract.",
+      "default": 25,
+      "minimum": 1,
+      "maximum": 5000
+    },
+    "enrichWebsiteContacts": {
+      "title": "Enrich Verified Emails, Phones & LinkedIn from Vendor Websites",
+      "type": "boolean",
+      "description": "Crawl each vendor's homepage and /contact page to extract verified B2B emails, phone numbers, and LinkedIn company URLs.",
+      "default": true
+    }
+  },
+  "required": []
+}

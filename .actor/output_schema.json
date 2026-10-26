@@ -1,0 +1,14 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Enriched CNCF Cloud Native & AI Vendor Leads Output",
+  "description": "Enriched B2B vendor and consulting partner leads from the CNCF Cloud Native & AI Landscape.",
+  "type": "object",
+  "properties": {
+    "overview": {
+      "type": "string",
+      "title": "Enriched CNCF B2B Leads",
+      "description": "View all enriched CNCF Cloud Native & AI B2B leads in a structured table.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    }
+  }
+}

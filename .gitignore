@@ -1,0 +1,11 @@
+.venv
+venv
+storage
+apify_storage
+__pycache__
+*.pyc
+*.csv
+*.xlsx
+*.zip
+.DS_Store
+.apify
